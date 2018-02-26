@@ -5,7 +5,7 @@
 
       </v-flex>
       <v-flex xs12>
-        <v-container fluid grid-list-xl>
+        <v-container fluid grid-list-xl class="px-2">
           <v-layout row wrap>
             <v-flex xs12>
               <h5 class="headline">About me</h5>
