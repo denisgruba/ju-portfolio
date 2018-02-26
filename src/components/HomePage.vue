@@ -1,7 +1,7 @@
 <template>
   <v-container
       :fluid="!largeSize"
-      :class="smallSize ? 'pa-0' : ''"
+      :class="!smallSize ? 'pa-0' : ''"
   >
     <v-layout
         row
@@ -17,7 +17,6 @@
         <v-container
             fluid
             grid-list-xl
-            class="px-2"
         >
           <v-layout
               row

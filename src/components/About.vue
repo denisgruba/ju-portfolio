@@ -1,19 +1,45 @@
 <template>
-  <v-container :fluid="!largeSize" :class="smallSize ? 'pa-0' : ''">
-    <v-layout row wrap>
-      <v-flex xs12 class="fixed-height-spacer">
+  <v-container
+      :fluid="!largeSize"
+      :class="!smallSize ? 'pa-0' : ''"
+  >
+    <v-layout
+        row
+        wrap
+    >
+      <v-flex
+          xs12
+          class="fixed-height-spacer"
+      >
 
       </v-flex>
       <v-flex xs12>
-        <v-container fluid grid-list-xl class="px-2">
-          <v-layout row wrap>
+        <v-container
+            fluid
+            grid-list-xl
+        >
+          <v-layout
+              row
+              wrap
+          >
             <v-flex xs12>
               <h5 class="headline">About me</h5>
             </v-flex>
-            <v-flex xs12 md6>
-              <img :src="aboutImage" alt="" class="responsive-img">
+            <v-flex
+                xs12
+                md6
+            >
+              <img
+                  :src="aboutImage"
+                  alt=""
+                  class="responsive-img"
+              >
             </v-flex>
-            <v-flex xs12 md6 v-html="aboutMessage">
+            <v-flex
+                xs12
+                md6
+                v-html="aboutMessage"
+            >
 
             </v-flex>
           </v-layout>

@@ -13,12 +13,13 @@
       </v-content>
       <my-footer></my-footer>
       <vue-progress-bar></vue-progress-bar>
-      <soundwaves3></soundwaves3>
+      <soundwaves5></soundwaves5>
     </v-app>
   </div>
 </template>
 
 <script>
+  import Soundwaves5 from './components/svg/Soundwaves5';
   import Soundwaves3 from './components/svg/Soundwaves3';
   import Soundwaves2 from './components/svg/Soundwaves2';
   import {mapGetters} from 'vuex';
@@ -29,7 +30,7 @@
   export default {
     name:       'App',
     components: {
-      Toolbar, MyFooter, SideNav, Soundwaves3, Soundwaves2,
+      Toolbar, MyFooter, SideNav, Soundwaves3, Soundwaves2, Soundwaves5,
     },
     computed:   {
       ...mapGetters({
