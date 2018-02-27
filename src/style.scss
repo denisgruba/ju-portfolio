@@ -68,7 +68,7 @@ p {
 }
 
 .card.highlight {
-  color: rgba(0,0,0,.87) !important;
+  color: rgba(0, 0, 0, .87) !important;
   .card__media .card__media__background {
     will-change: filter, color;
     transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
@@ -76,7 +76,7 @@ p {
 }
 
 .card.highlight:hover {
-  color: rgba(50,50,50,.87) !important;
+  color: rgba(50, 50, 50, .87) !important;
   .card__media .card__media__background {
     filter: brightness(120%);
     will-change: filter, color;
@@ -105,7 +105,7 @@ a:hover {
 }
 
 .reverse-row {
-  flex-direction: row-reverse!important;
+  flex-direction: row-reverse !important;
 }
 
 .selected-menu-item {
@@ -164,11 +164,12 @@ img.responsive-img {
   Fade Animation
  */
 .fade-quick-enter-active, .fade-quick-leave-active {
-  transition: opacity .5s
+  transition: opacity .5s;
 }
 
 .fade-quick-enter, .fade-quick-leave-to {
-  opacity: 0
+  opacity: 0;
+  height: 0%;
 }
 
 .clear-border-radius {

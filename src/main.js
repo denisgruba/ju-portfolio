@@ -41,7 +41,7 @@ Vue.use(Vuetify, {
 });
 
 /* eslint-disable no-new */
-const app = new Vue({
+export const app = new Vue({
   el:         '#app',
   router,
   store,
