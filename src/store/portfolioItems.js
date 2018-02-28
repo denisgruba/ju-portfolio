@@ -86,15 +86,24 @@ const module = {
             align:    'left',
             headline: '<h5 class="headline"><i>Sensory Overload</i> by <i>Kate Shaw</i></h5>',
             description:
-                      '<p>Sensory Overload is a film produced by a fashion photographer <a href="http://kateshaw.me/" target="_blank">Kate Shaw</a> as a part of her dissertation. The project\'s main objective was to focus on the exisitng symptoms of Aspergers Syndrome, as experienced and perceived by Kate herself, with a strong focus on hypersensitivity to light, sound, and tough. The film is being presented to professionals from Vice and Nick Knight, the founder and director of SHOWstudio.com.</p>',
+                      'SOUND DESIGNER<br>' +
+                      'FEB 2018 – MAR 2018' +
+                      '<ul>' +
+                      '<li>Foley, field, voice, and synth recording</li>' +
+                      '<li>Sound editing</li>' +
+                      '<li>Putting sound to moving picture</li>' +
+                      '</ul>',
             img:      require('../assets/SO+film+pic.png'),
           },
           {
             align:    'right',
             headline: '<h5 class="headline" style="width: 50%">My work</h5>',
             description:
-                      '<p>Kate asked me to produce the whole soundscape for her production. We worked closely with each other, actively sharing any new iteractions and changes to the film, in order to help portray her vision exactly the way she imagined. In the end we both agreed that using organic sounding foley and synthetic effects was the best approach to make the audience feel unesay and uncomfortable and to give them an idea of what an Aspergers attack may feel like. I worked in Pro Tools and Adobe Audition and Premiere Pro to put the soundscape for Kate together.</p>',
-            video:    'https://player.vimeo.com/video/31215588',
+                      '<p>Sensory Overload is a film produced by a fashion photographer Kate Shaw as a part of her dissertation. The project’s main objective was to focus on the existing symptoms of Aspergers Syndrome, as experienced and perceived by Kate herself, with a strong focus on hypersensitivity to light, sound, and touch. The film has been presented to professionals from Vice who showed a real interested in her project, complimented the sound design, and gave Kate an opportunity to work for the brand.</p>' +
+                      '<p>Kate asked me to produce the whole soundscape for her production. We worked closely with each other, actively sharing any new iterations and changes to the film, in order to help portray her vision exactly the way she imagined. In the end we both agreed that using organic sounding foley and synthetic effects was the best approach to make the audience feel uneasy and uncomfortable and to give them an idea of what an Aspergers attack may feel like. I worked in Pro Tools and Adobe Audition and Premiere Pro to put the soundscape for Kate together.</p>',
+            // secondHeadline: '<h5 class="headline" style="width: 50%">My work</h5>',
+            secondText:
+                      '<p>Kate asked me to produce the whole soundscape for her production. We worked closely with each other, actively sharing any new iterations and changes to the film, in order to help portray her vision exactly the way she imagined. In the end we both agreed that using organic sounding foley and synthetic effects was the best approach to make the audience feel uneasy and uncomfortable and to give them an idea of what an Aspergers attack may feel like. I worked in Pro Tools and Adobe Audition and Premiere Pro to put the soundscape for Kate together.</p>',
           }
         ],
         colors:   {
@@ -102,6 +111,7 @@ const module = {
           error:     '#ff9800'
         },
         mainImg:  require('../assets/SO+film+pic.png'),
+        video:    'https://player.vimeo.com/video/257737219',
         images:   [
           {
             src:   require('../assets/train_casting_cropped.jpg'),

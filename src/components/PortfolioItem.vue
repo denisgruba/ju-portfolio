@@ -9,9 +9,13 @@
     >
       <v-flex
           xs12
-          class="fixed-height-spacer"
+          class="text-xs-center"
+          style="overflow: hidden; max-height: 250px;"
       >
-
+        <img
+            :src="item.mainImg"
+            class="responsive-img "
+        >
       </v-flex>
       <!--<v-flex xs12>-->
       <!--<h5 class="headline" v-html="item.pageTitle">-->
@@ -40,10 +44,10 @@
           v-if="row.headline"
           class="text-xs-center"
       >
-        <h5
+        <div
             class="display-1"
             v-html="row.headline"
-        ></h5>
+        ></div>
       </v-flex>
       <v-flex
           xs12
@@ -67,6 +71,18 @@
             :src="row.img"
             class="responsive-img"
         >
+        <div
+            v-if="row.secondHeadline"
+            v-html="row.secondHeadline"
+        >
+
+        </div>
+        <div
+            v-if="row.secondText"
+            v-html="row.secondText"
+        >
+
+        </div>
       </v-flex>
       <v-flex
           xs12
@@ -76,33 +92,33 @@
 
       </v-flex>
     </v-layout>
-    <!--<v-layout-->
-        <!--row-->
-        <!--wrap-->
-    <!--&gt;-->
-      <!--<v-flex-->
-          <!--xs12-->
-          <!--sm6-->
-          <!--md4-->
-          <!--v-for="(img, index) in item.images"-->
-          <!--:key="`img${index}`"-->
-      <!--&gt;-->
-        <!--<v-card hover>-->
-          <!--<v-card-media-->
-              <!--class="white&#45;&#45;text zoom"-->
-              <!--height="300px"-->
-              <!--:src="img.src"-->
-          <!--&gt;-->
-          <!--</v-card-media>-->
-        <!--</v-card>-->
-      <!--</v-flex>-->
-    <!--</v-layout>-->
+    <v-layout
+        row
+        wrap
+    >
+      <v-flex
+          xs12
+          v-if="item.video"
+      >
+        <div
+            class='embed-container'
+        >
+          <iframe
+              :src="item.video"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+          ></iframe>
+        </div>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
 <script>
   export default {
-    name:     'portfolio-item',
+    name: 'portfolio-item',
     computed: {
 
       item() {
@@ -112,7 +128,7 @@
         return this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
       },
     },
-    watch:    {
+    watch: {
       $route: {
         handler(to, from) {
           // this.$store.commit('setPageColors', this.item.colors);
