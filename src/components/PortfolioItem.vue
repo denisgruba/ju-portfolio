@@ -39,6 +39,20 @@
         :key="`descRow${index}`"
         :class="row.align === 'right' ? 'reverse-row' : ''"
     >
+      <v-flex xs12 v-if="row.align==='full-width'">
+        <div
+            class='embed-container'
+            v-if="row.video"
+        >
+          <iframe
+              :src="row.video"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+          ></iframe>
+        </div>
+      </v-flex>
       <v-flex
           xs12
           v-if="row.headline"

@@ -3,7 +3,10 @@
     <v-app class="secondary">
       <side-nav></side-nav>
       <toolbar></toolbar>
-      <v-content style="z-index: 4" fill-height>
+      <v-content
+          style="z-index: 4"
+          fill-height
+      >
         <transition
             name="fade-quick"
             mode="out-in"
@@ -14,6 +17,7 @@
       <my-footer></my-footer>
       <vue-progress-bar></vue-progress-bar>
       <soundwaves5></soundwaves5>
+      <google-script></google-script>
     </v-app>
   </div>
 </template>
@@ -30,7 +34,7 @@
   export default {
     name:       'App',
     components: {
-      Toolbar, MyFooter, SideNav, Soundwaves3, Soundwaves2, Soundwaves5,
+      Toolbar, MyFooter, SideNav, Soundwaves3, Soundwaves2, Soundwaves5, GoogleScript,
     },
     computed:   {
       ...mapGetters({
@@ -71,9 +75,9 @@
       getPageColors: {
         handler(newValue) {
           this.$vuetify.theme.secondary = newValue.secondary;
-          this.$vuetify.theme.error = newValue.error;
+          this.$vuetify.theme.error     = newValue.error;
         },
-        deep: true,
+        deep:      true,
         immediate: true,
       }
     }
