@@ -17,7 +17,6 @@
       <my-footer></my-footer>
       <vue-progress-bar></vue-progress-bar>
       <soundwaves5></soundwaves5>
-      <google-script></google-script>
     </v-app>
   </div>
 </template>
@@ -34,7 +33,7 @@
   export default {
     name:       'App',
     components: {
-      Toolbar, MyFooter, SideNav, Soundwaves3, Soundwaves2, Soundwaves5, GoogleScript,
+      Toolbar, MyFooter, SideNav, Soundwaves3, Soundwaves2, Soundwaves5,
     },
     computed:   {
       ...mapGetters({
