@@ -74,7 +74,7 @@ const module = {
             // img:      require('../assets/dod_banner_fb_smaller.jpg'),
           },
           {
-            align:    'left',
+            align:    'right',
             // headline: '<h5 class="headline" style="width: 50%">My work</h5>',
             description:
                       '<p>Sundown is a short, narrative experience developed by a team of six university students under the name Teeny Tiny Bison. The game is currently in its second month of development and is scheduled to be available for download this summer of 2018. \n</p>',

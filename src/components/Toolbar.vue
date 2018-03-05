@@ -2,10 +2,10 @@
   <v-toolbar
       app
       flat
-      class="secondary pt-4 pb-2"
+      class="secondary"
       fixed
       style="z-index: 6"
-      :class="largeSize ? 'toolbar-contained' : ''"
+      :class="[largeSize ? 'toolbar-contained' : '', smallSize ? 'pt-2 pb-2' : 'pt-4 pb-4']"
   >
     <v-btn
         icon
@@ -100,6 +100,9 @@
       InstagramIcon, LinkedInIcon, TwitterIcon, MenuIcon,
     },
     computed: {
+      smallSize() {
+        return this.$vuetify.breakpoint.xsOnly || this.$vuetify.breakpoint.smOnly;
+      },
       largeSize() {
         return this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
       },
@@ -115,7 +118,12 @@
   }
 </script>
 
-<style>
+<style lang="scss">
+  .secondary {
+    .toolbar__content {
+      height: auto!important;
+    }
+  }
   .material-design-icon__svg path {
     fill: #313131;
   }

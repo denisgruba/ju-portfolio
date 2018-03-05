@@ -1,6 +1,6 @@
 <template>
   <v-navigation-drawer v-model="sideNavState" fixed temporary app height="100%" style="z-index: 20;">
-    <v-toolbar flat>
+    <v-toolbar flat class="transparent">
       <v-list>
         <v-list-tile>
           <v-list-tile-title class="title">
