@@ -35,7 +35,7 @@ Vue.use(Vuetify, {
   theme: {
     primary:   colors.lightBlue.base,
     accent:    colors.indigo.base,
-    secondary: '#F7FFE0',
+    secondary: '#FFFFFF',
     error:     '#ff0041'
   },
 });

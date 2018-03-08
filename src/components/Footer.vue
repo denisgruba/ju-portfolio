@@ -17,7 +17,7 @@
           class="zindex6 px-4 text-xs-right pb-3"
           :class="largeSize ? 'contact-footer-contained' : ''"
       >
-        <a href="mailto:contact@jacoburantowka.com">urantowka.jacob@gmail.com</a>
+        <!--<a href="mailto:contact@jacoburantowka.com">urantowka.jacob@gmail.com</a>-->
         <!--<span class="break-pipe-opacity">|</span>-->
         <!--<span class="phone">+44&nbsp;(0)&nbsp;7463341569</span>-->
       </v-flex>

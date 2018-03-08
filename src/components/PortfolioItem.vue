@@ -39,7 +39,10 @@
         :key="`descRow${index}`"
         :class="row.align === 'right' ? 'reverse-row' : ''"
     >
-      <v-flex xs12 v-if="row.align==='full-width'">
+      <v-flex
+          xs12
+          v-if="row.align==='full-width'"
+      >
         <div
             class='embed-container'
             v-if="row.video"
@@ -68,6 +71,24 @@
           sm6
           class="limited-height"
       >
+        <v-carousel
+            v-if="row.imagesSlider"
+        >
+          <v-carousel-item
+              v-for="image in row.imagesSlider"
+              :src="image.src"
+              :key="image.src"
+          >
+
+          </v-carousel-item>
+        </v-carousel>
+        <img
+            v-if="row.images"
+            v-for="image in row.images"
+            :key="image.src"
+            :src="image.src"
+            class="responsive-img"
+        >
         <div
             class='embed-container'
             v-if="row.video"
@@ -109,10 +130,10 @@
     <v-layout
         row
         wrap
+        v-if="item.video"
     >
       <v-flex
           xs12
-          v-if="item.video"
       >
         <div
             class='embed-container'
@@ -127,12 +148,32 @@
         </div>
       </v-flex>
     </v-layout>
+    <v-layout
+        row
+        wrap
+        v-if="item.images"
+    >
+      <v-flex
+          xs12
+          class="text-xs-center"
+      >
+        <v-carousel>
+          <v-carousel-item
+              v-for="image in item.images"
+              :src="image.src"
+              :key="image.src"
+          >
+
+          </v-carousel-item>
+        </v-carousel>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
 <script>
   export default {
-    name: 'portfolio-item',
+    name:     'portfolio-item',
     computed: {
 
       item() {
@@ -142,7 +183,7 @@
         return this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
       },
     },
-    watch: {
+    watch:    {
       $route: {
         handler(to, from) {
           // this.$store.commit('setPageColors', this.item.colors);
@@ -153,6 +194,6 @@
   }
 </script>
 
-<style scoped>
+<style>
 
 </style>

@@ -64,8 +64,7 @@
       <v-btn
           icon
           class="btn-social clear-border-radius px-4"
-          href="https://uk.linkedin.com/in/jurantowka"
-          target="_blank"
+          @click="openInNewWindow('https://uk.linkedin.com/in/jurantowka')"
           style="height: 100%; width: 100%;"
           active-class="selected-menu-item"
           :ripple="false"
@@ -75,8 +74,7 @@
       <v-btn
           icon
           class="btn-social clear-border-radius px-4"
-          href="https://twitter.com/the_audio_kid"
-          target="_blank"
+          @click="openInNewWindow('https://twitter.com/the_audio_kid')"
           style="height: 100%; width: 100%;"
           active-class="selected-menu-item"
           :ripple="false"
@@ -111,6 +109,9 @@
       ]),
     },
     methods: {
+      openInNewWindow(url) {
+        window.open(url,'_blank')
+      },
       ...mapMutations([
         'setSideNav',
       ]),

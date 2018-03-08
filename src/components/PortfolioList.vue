@@ -41,7 +41,7 @@
           <v-card-media
               class="white--text "
               height="300px"
-              :src="portfolioItem.mainImg"
+              :src="portfolioItem.previewImg"
           >
             <!--<v-container-->
             <!--fill-height-->
