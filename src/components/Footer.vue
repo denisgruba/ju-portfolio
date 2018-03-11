@@ -62,13 +62,18 @@
   import TwitterIcon from 'vue-material-design-icons/twitter.vue';
 
   export default {
-    name: 'my-footer',
+    name:       'my-footer',
     components: {
       Soundwaves4, InstagramIcon, LinkedInIcon, TwitterIcon
     },
-    computed: {
+    computed:   {
       largeSize() {
         return this.$vuetify.breakpoint.mdOnly || this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
+      },
+    },
+    methods:    {
+      openInNewWindow(url) {
+        window.open(url, '_blank')
       },
     }
   }
