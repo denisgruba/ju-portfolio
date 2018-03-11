@@ -62,7 +62,9 @@
           <v-list-tile-title>About</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
-      <v-list-tile href="https://uk.linkedin.com/in/jacoburantowka">
+      <v-list-tile
+          @click="openInNewWindow('https://uk.linkedin.com/in/jurantowka')"
+      >
         <v-list-tile-action>
           <linked-in-icon class="text--grey text--darken-2"></linked-in-icon>
         </v-list-tile-action>
@@ -70,7 +72,9 @@
           <v-list-tile-title>LinkedIn</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
-      <v-list-tile href="https://twitter.com/the_audio_kid">
+      <v-list-tile
+          @click="openInNewWindow('https://twitter.com/the_audio_kid')"
+      >
         <v-list-tile-action>
           <twitter-icon class="text--grey text--darken-2"></twitter-icon>
         </v-list-tile-action>
@@ -127,6 +131,9 @@
       }
     },
     methods: {
+      openInNewWindow(url) {
+        window.open(url, '_blank')
+      },
       ...mapMutations([
         'setSideNav'
       ])

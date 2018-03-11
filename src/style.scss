@@ -253,3 +253,13 @@ img.responsive-img {
 //    padding: 0 8px;
 //  }
 //}
+
+.project-links {
+  color: #616161;
+  .list__tile--active {
+    color: #000000!important;
+  }
+  &:hover {
+    color: #000000;
+  }
+}

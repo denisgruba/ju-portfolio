@@ -63,6 +63,7 @@
         <v-list
         >
           <v-list-tile
+              class="project-links"
               v-for="(item, index) in $store.state.portfolioItems.list"
               :key="item.title"
               :to="{name: 'PortfolioItem', params: {id: index}}"
