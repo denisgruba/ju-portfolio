@@ -38,9 +38,12 @@
             <v-flex
                 xs12
                 md6
-                v-html="aboutMessage"
-            >
 
+            >
+              <component
+                  v-bind:is="aboutLinked"
+                  v-bind="$props"
+              />
             </v-flex>
           </v-layout>
         </v-container>
@@ -55,11 +58,17 @@
   export default {
     name:     'about',
     computed: {
+      aboutLinked() {
+        return {
+          template: this.aboutMessage,
+          props:    this.$options.props
+        }
+      },
       smallSize() {
         return this.$vuetify.breakpoint.xsOnly || this.$vuetify.breakpoint.smOnly;
       },
       largeSize() {
-        return this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
+        return this.$vuetify.breakpoint.mdOnly || this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
       },
       ...mapGetters({
         aboutImage:   'getAboutImage',

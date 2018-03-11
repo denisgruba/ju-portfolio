@@ -16,7 +16,7 @@
       </v-content>
       <my-footer></my-footer>
       <vue-progress-bar></vue-progress-bar>
-      <soundwaves5></soundwaves5>
+      <!--<soundwaves5></soundwaves5>-->
     </v-app>
   </div>
 </template>

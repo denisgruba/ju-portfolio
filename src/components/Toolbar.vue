@@ -25,7 +25,7 @@
           class="ma-0 px-4 depth8"
           style="line-height: 1.3"
       >
-        <span style="font-weight: 600; font-size: 28px">Jacob Urantowka</span><br>
+        <span class="name-title">Jacob Urantowka</span><br>
         <span
             style="font-size: 16px"
             class="grey--text text--darken-2"
@@ -39,20 +39,38 @@
       <v-btn
           flat
           :to="{name: 'Home'}"
+          class="clear-border-radius"
+          active-class="selected-menu-item"
           exact
-          class="clear-border-radius"
-          active-class="selected-menu-item"
           :ripple="false"
-      ><span>Showreel</span>
+      ><span>Home</span>
       </v-btn>
-      <v-btn
-          flat
-          :to="{name: 'PortfolioList'}"
-          class="clear-border-radius"
-          active-class="selected-menu-item"
-          :ripple="false"
-      ><span>Projects</span>
-      </v-btn>
+      <v-menu
+          open-on-hover
+          bottom
+          offset-y
+          content-class="toolbar-menu elevation-1"
+      >
+        <v-btn
+            slot="activator"
+            flat
+            exact
+            class="clear-border-radius"
+            active-class="selected-menu-item"
+            :ripple="false"
+        ><span>Projects</span>
+        </v-btn>
+        <v-list
+        >
+          <v-list-tile
+              v-for="(item, index) in $store.state.portfolioItems.list"
+              :key="item.title"
+              :to="{name: 'PortfolioItem', params: {id: index}}"
+          >
+            <v-list-tile-title>{{ item.menuTitle }}</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
       <v-btn
           flat
           :to="{name: 'About'}"
@@ -93,24 +111,24 @@
   import MenuIcon from 'vue-material-design-icons/menu.vue';
 
   export default {
-    name: 'toolbar',
+    name:       'toolbar',
     components: {
       InstagramIcon, LinkedInIcon, TwitterIcon, MenuIcon,
     },
-    computed: {
+    computed:   {
       smallSize() {
         return this.$vuetify.breakpoint.xsOnly || this.$vuetify.breakpoint.smOnly;
       },
       largeSize() {
-        return this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
+        return this.$vuetify.breakpoint.mdOnly || this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
       },
       ...mapGetters([
         'getSideNavState',
       ]),
     },
-    methods: {
+    methods:    {
       openInNewWindow(url) {
-        window.open(url,'_blank')
+        window.open(url, '_blank')
       },
       ...mapMutations([
         'setSideNav',
@@ -122,9 +140,10 @@
 <style lang="scss">
   .secondary {
     .toolbar__content {
-      height: auto!important;
+      height: auto !important;
     }
   }
+
   .material-design-icon__svg path {
     fill: #313131;
   }

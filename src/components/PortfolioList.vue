@@ -13,13 +13,11 @@
           xs12
           class="fixed-height-spacer"
       >
-
       </v-flex>
-      <v-flex
-          xs12
-          class="fixed-height-spacer"
-      >
-
+      <home-page
+      ></home-page>
+      <v-flex xs12 class="py-0">
+        <h5 class="headline mb-2">Projects</h5>
       </v-flex>
       <v-flex
           class="justify-height"
@@ -35,9 +33,9 @@
             flat
             :to="{name: 'PortfolioItem', params: {id: index}}"
         >
-          <v-card-text class="text-xs-center">
-            <h5 class="title">{{portfolioItem.title}}</h5>
-          </v-card-text>
+          <!--<v-card-text class="text-xs-center">-->
+          <!--<h5 class="title">{{portfolioItem.title}}</h5>-->
+          <!--</v-card-text>-->
           <v-card-media
               class="white--text "
               height="300px"
@@ -68,9 +66,14 @@
               class="text-xs-center"
               style="height: 50px"
           >
-            <h5 class="subheading">{{portfolioItem.subTitle}}</h5>
+            <h5 class="subheading"><b>{{portfolioItem.title}}</b> <br> {{portfolioItem.subTitle}}</h5>
           </v-card-text>
         </v-card>
+      </v-flex>
+      <v-flex
+          xs12
+          class="fixed-height-spacer"
+      >
       </v-flex>
       <!--<v-flex xs12 sm6 md4 v-for="(portfolioItem, index) in portfolioItems" :key="portfolioItem.title">-->
       <!--<v-card :to="{name: 'PortfolioItem', params: {id: index}}" hover>-->
@@ -100,12 +103,16 @@
 
 <script>
   import {mapGetters} from 'vuex';
+  import HomePage from './HomePage';
 
   export default {
-    name:     'portfolio-list',
-    computed: {
+    name:       'portfolio-list',
+    components: {
+      HomePage
+    },
+    computed:   {
       largeSize() {
-        return this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
+        return this.$vuetify.breakpoint.mdOnly || this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
       },
       ...mapGetters({
         portfolioItems: 'getListOfPortfolioItems',

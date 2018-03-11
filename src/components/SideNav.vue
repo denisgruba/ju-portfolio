@@ -1,6 +1,16 @@
 <template>
-  <v-navigation-drawer v-model="sideNavState" fixed temporary app height="100%" style="z-index: 20;">
-    <v-toolbar flat class="transparent">
+  <v-navigation-drawer
+      v-model="sideNavState"
+      fixed
+      temporary
+      app
+      height="100%"
+      style="z-index: 20;"
+  >
+    <v-toolbar
+        flat
+        class="transparent"
+    >
       <v-list>
         <v-list-tile>
           <v-list-tile-title class="title">
@@ -10,21 +20,41 @@
       </v-list>
     </v-toolbar>
     <v-divider></v-divider>
-    <v-list dense class="pt-0">
-      <v-list-tile :to="{name: 'Home'}" exact>
+    <v-list
+        dense
+        class="pt-0"
+    >
+      <v-list-tile
+          :to="{name: 'Home'}"
+          exact
+      >
         <v-list-tile-action>
         </v-list-tile-action>
         <v-list-tile-content>
-          <v-list-tile-title>Showreel</v-list-tile-title>
+          <v-list-tile-title>Home</v-list-tile-title>
         </v-list-tile-content>
       </v-list-tile>
-      <v-list-tile :to="{name: 'PortfolioList'}">
-        <v-list-tile-action>
-        </v-list-tile-action>
-        <v-list-tile-content>
-          <v-list-tile-title>Projects</v-list-tile-title>
-        </v-list-tile-content>
-      </v-list-tile>
+      <v-list-group
+          value="true"
+          no-action
+      >
+        <v-list-tile slot="activator">
+          <v-list-tile-action>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>Projects</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile
+            v-for="(item, index) in $store.state.portfolioItems.list"
+            :key="item.title"
+            :to="{name: 'PortfolioItem', params: {id: index}}"
+        >
+          <v-list-tile-content class="pl-4">
+            <v-list-tile-title>{{ item.menuTitle }}</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+      </v-list-group>
       <v-list-tile :to="{name: 'About'}">
         <v-list-tile-action>
         </v-list-tile-action>
@@ -68,11 +98,11 @@
   import {mapGetters, mapMutations} from 'vuex';
 
   export default {
-    name:       'side-nav',
+    name: 'side-nav',
     components: {
       InstagramIcon, LinkedInIcon, TwitterIcon,
     },
-    computed:   {
+    computed: {
       sideNavState: {
         get() {
           return this.getSideNavState;
@@ -96,7 +126,7 @@
         // ]
       }
     },
-    methods:    {
+    methods: {
       ...mapMutations([
         'setSideNav'
       ])

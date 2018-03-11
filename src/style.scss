@@ -1,10 +1,23 @@
 .application {
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Catamaran', sans-serif;
   font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
 }
 
 .btn {
   font-size: 16px;
+}
+
+.headline {
+  letter-spacing: 2px !important;
+  font-weight: 500 !important;
+}
+
+.name-title {
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 
 img, iframe {
@@ -27,6 +40,12 @@ p {
 
 .btn.btn-social {
   max-width: 30px;
+}
+
+.btn-social-footer {
+  svg path {
+    fill: #616161 !important;
+  }
 }
 
 .btn.btn-social .btn__content {
@@ -88,12 +107,12 @@ p {
   background-color: transparent;
 }
 
-a .btn__content span {
+a .btn__content span, .btn-social .btn__content span {
   transition: border-bottom-color .3s;
   border-bottom: transparent 2px solid;
 }
 
-a:hover {
+a:hover, .btn-social:hover {
   background: transparent;
   .btn__content {
     background: transparent;
@@ -187,3 +206,50 @@ img.responsive-img {
   }
 }
 
+.toolbar-menu {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12) !important;
+  border-radius: 0;
+  .list {
+    padding-bottom: 0;
+    .list__tile.list__tile--link {
+      height: 30px;
+      &:hover {
+        background-color: transparent;
+
+      }
+      .list__tile__title {
+        height: 24px;
+        line-height: 24px;
+
+        transition: border-bottom-color .3s;
+        border-bottom: transparent 2px solid;
+        //-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,1);
+        //-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,1);
+        //box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,1);
+        &:hover {
+
+          transition: .3s border-bottom-color;
+          border-bottom: black 2px solid;
+          //-webkit-box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,1);
+          //-moz-box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,1);
+          //box-shadow: inset 0px -2px 0px 0px rgba(0,0,0,1);
+        }
+      }
+    }
+
+  }
+}
+
+.list__group::after, .list__group::before {
+  height: 0px;
+}
+
+.toolbar__items .btn, .toolbar__items .menu, .toolbar__items .menu__activator {
+  margin-top: 1px;
+}
+
+//.toolbar__items {
+//  .btn__content {
+//    padding: 0 8px;
+//  }
+//}

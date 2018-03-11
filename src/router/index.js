@@ -16,7 +16,7 @@ const router = new Router({
     {
       path:      '/',
       name:      'Home',
-      component: HomePage
+      component: PortfolioList
     },
     {
       path:      '/projects',

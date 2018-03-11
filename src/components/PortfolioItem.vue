@@ -10,7 +10,7 @@
       <v-flex
           xs12
           class="text-xs-center"
-          style="overflow: hidden; max-height: 250px;"
+          style="overflow: hidden; max-height: 450px;"
       >
         <img
             :src="item.mainImg"
@@ -34,7 +34,7 @@
     <v-layout
         row
         wrap
-        class="mb-5"
+        class="mb-3"
         v-for="(row, index) in item.content"
         :key="`descRow${index}`"
         :class="row.align === 'right' ? 'reverse-row' : ''"
@@ -59,7 +59,7 @@
       <v-flex
           xs12
           v-if="row.headline"
-          class="text-xs-center"
+          :class="row.headlineClass"
       >
         <div
             class="display-1"
@@ -180,7 +180,7 @@
         return this.$store.getters.getPortfolioItem(this.$route.params.id);
       },
       largeSize() {
-        return this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
+        return this.$vuetify.breakpoint.mdOnly || this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
       },
     },
     watch:    {
