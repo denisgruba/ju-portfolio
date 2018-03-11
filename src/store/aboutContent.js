@@ -12,9 +12,9 @@ const module = {
                 '<li>Carrot cakes and cinnamon rolls are my confectionary specialties</li>' +
                 '<li>I sing Disney songs on repeat</li>' +
                 '</ul>' +
-                '<p>Feel free to get in touch on <a href="mailto:urantowka.jacob@gmail.com">urantowka.jacob@gmail.com</a> or drop by my social media: <a href="https://twitter.com/the_audio_kid" target="_blank">Twitter</a> or <a href="https://uk.linkedin.com/in/jurantowka" target="_blank">LinkedIn</a>.I look forward to hearing from you!</p>' +
+                '<p>Feel free to get in touch on <a href="mailto:urantowka.jacob@gmail.com">urantowka.jacob@gmail.com</a> or drop by my social media: <a href="https://twitter.com/the_audio_kid" target="_blank">Twitter</a> or <a href="https://uk.linkedin.com/in/jurantowka" target="_blank">LinkedIn</a>. I look forward to hearing from you!</p>' +
                 '</div>',
-    aboutImage: require('../assets/jacob.jpg'),
+    aboutImage: require('../assets/jacob2.jpg'),
     pageColors: {
       secondary: '#ffffff',
       error:     '#4f00ff'
