@@ -116,7 +116,7 @@ const module = {
           secondary: '#ffffff',
           error:     '#4bd500'
         },
-        mainImg:    require('../assets/sundown_logo_trimmed2.png'),
+        mainImg:    require('../assets/sundown_logo_trimmed2.jpg'),
         previewImg: require('../assets/SundownThumbnail.png'),
       },
       3: {
