@@ -7,34 +7,34 @@ const module = {
         subTitle:   'Game | Assistant Sound Designer',
         content:    [
           {
-            align:    'right',
-            headline: '<h5 class="headline">Du Lac & Fey: Dance of Death <span style="font-weight: 300">by</span> Salix Games Ltd</h5>',
+            align:         'right',
+            headline:      '<h5 class="headline">Du Lac & Fey: Dance of Death <span style="font-weight: 300">by</span> Salix Games Ltd</h5>',
             headlineClass: 'text-xs-center',
             description:
-                      '<h5 class="headline">Assistant Sound Designer</h5>' +
-                      '<b>Jan 2018 – June 2018</b>' +
-                      '<ul class="pl-3">' +
-                      '<li>Creation and management of systems in the Wwise sound engine</li>' +
-                      '<li>Ownership of narrative implementation through creation, naming, management, and\n' +
-                      'implementation of Ink files</li>' +
-                      '<li>Assisting in dialogue production and implementation</li>' +
-                      '<li>Assisted in VO recording sessions at Pinewood Studios, Shepperton</li>' +
-                      '<li>Creation and management of audio documentation</li>' +
-                      '<li>Co-running the exhibit at EGX Rezzed</li>' +
-                      '</ul>',
-            video:    'https://www.youtube.com/embed/FXyTjUJs4YU',
+                           '<h5 class="headline">Assistant Sound Designer</h5>' +
+                           '<b>Jan 2018 – June 2018</b>' +
+                           '<ul class="pl-3">' +
+                           '<li>Creation and management of systems in the Wwise sound engine</li>' +
+                           '<li>Ownership of narrative implementation through creation, naming, management, and\n' +
+                           'implementation of Ink files</li>' +
+                           '<li>Assisting in dialogue production and implementation</li>' +
+                           '<li>Assisted in VO recording sessions at Pinewood Studios, Shepperton</li>' +
+                           '<li>Creation and management of audio documentation</li>' +
+                           '<li>Co-running the exhibit at EGX Rezzed</li>' +
+                           '</ul>',
+            video:         'https://www.youtube.com/embed/FXyTjUJs4YU',
             // img:      require('../assets/dod_banner_fb_smaller.jpg'),
           },
           {
-            align:  'right',
-            headline: '<h5 class="headline">About the Project</h5>',
+            align:         'right',
+            headline:      '<h5 class="headline">About the Project</h5>',
             headlineClass: 'py-0',
             description:
             // '<h5 class="headline text-xs-center">My work</h5>' +
             //         '<h5 class="headline">About the Project</h5>' +
-                    '<p><a href="http://www.salixgames.com/" target="_blank">Salix</a> are a Guildford based indie company made form combined powers of ex-AAA developers from places such as Rocksteady, Lionhead, and Creative Assembly. Du Lac & Fey: Dance of Death is the studio’s debut title. It tells the story of Arthurian immortals Sir Lancelot Du Lac and Morgana Le Fey as they endeavour to bring the infamous murders of Jack the Ripper to an end and save the city of London. The game is set for release on PC this year.</p>' +
-                    '<p>I first got involved with Salix at the start of my final year at university when I got asked to assist with polishing the localisation for the game. My eagerness and determination has let me level up to the current part-time position with Salix as an Assistant Sound Designer, where my work revolves around assisting in dialogue production, management, and implementation alongside audio professionals such as Ian Macbeth and the director and the founder of the brand Jessica Saunders.</p>',
-            images: [
+                           '<p><a href="http://www.salixgames.com/" target="_blank">Salix</a> are a Guildford based indie company made form combined powers of ex-AAA developers from places such as Rocksteady, Lionhead, and Creative Assembly. Du Lac & Fey: Dance of Death is the studio’s debut title. It tells the story of Arthurian immortals Sir Lancelot Du Lac and Morgana Le Fey as they endeavour to bring the infamous murders of Jack the Ripper to an end and save the city of London. The game is set for release on PC this year.</p>' +
+                           '<p>I first got involved with Salix at the start of my final year at university when I got asked to assist with polishing the localisation for the game. My eagerness and determination has let me level up to the current part-time position with Salix as an Assistant Sound Designer, where my work revolves around assisting in dialogue production, management, and implementation alongside audio professionals such as Ian Macbeth and the director and the founder of the brand Jessica Saunders.</p>',
+            images:        [
               {
                 src: require('../assets/SalixPicture1.jpg')
               }
@@ -68,32 +68,32 @@ const module = {
         subTitle:   'Game | Audio Designer',
         content:    [
           {
-            align:    'right',
-            headline: '<h5 class="headline">Sundown <span style="font-weight: 300">by</span> Teeny Tiny Bison</h5>',
+            align:         'right',
+            headline:      '<h5 class="headline">Sundown <span style="font-weight: 300">by</span> Teeny Tiny Bison</h5>',
             headlineClass: 'text-xs-center',
             description:
-                      '<h5 class="headline">Audio Designer</h5>' +
-                      '<b>Jan 2018 – June 2018</b>' +
-                      '<ul class="pl-3">' +
-                      '<li>Organising, co-running, and recording VO auditions</li>' +
-                      '<li>Recording, editing, and managing dialogue production</li>' +
-                      '<li>Implementation of dialogue with Fungus</li>' +
-                      '<li>Implementation of sounds with Wwise</li>' +
-                      '<li>Created an adaptive ambient soundscape with Wwise</li>' +
-                      '<li>Sound design and foley and field recording</li>' +
-                      '</ul>',
-            video:    'https://player.vimeo.com/video/259221160',
+                           '<h5 class="headline">Audio Designer</h5>' +
+                           '<b>Jan 2018 – June 2018</b>' +
+                           '<ul class="pl-3">' +
+                           '<li>Organising, co-running, and recording VO auditions</li>' +
+                           '<li>Recording, editing, and managing dialogue production</li>' +
+                           '<li>Implementation of dialogue with Fungus</li>' +
+                           '<li>Implementation of sounds with Wwise</li>' +
+                           '<li>Created an adaptive ambient soundscape with Wwise</li>' +
+                           '<li>Sound design and foley and field recording</li>' +
+                           '</ul>',
+            video:         'https://player.vimeo.com/video/259221160',
             // img:      require('../assets/dod_banner_fb_smaller.jpg'),
           },
           {
-            align:  'right',
-            headline: '<h5 class="headline">About the Project</h5>',
+            align:         'right',
+            headline:      '<h5 class="headline">About the Project</h5>',
             headlineClass: 'py-0',
             description:
-                    // '<h5 class="headline">About the Project</h5>' +
-                    '<p>Sundown is a short, narrative experience developed by a team of six university students under the name Teeny Tiny Bison. The game is currently in its second month of development and is scheduled to be available for download this summer of 2018.</p>' +
-                    '<p>Sundown’s core feature is its unique and natural-sounding branching dialogue produced by using ad lib and interview techniques. These improvised sessions with actors, run and organised by myself, our animator, and writer, were then transcribed into a final script for dialogue recording. As the sole Audio Designer, I took care of dialogue production, editing and implementation, sound and ambience design and implementation, and music implementation. I also assisted in concept creation and, together with our writer, pitched the game to industry professionals and a public of around 150 individuals.</p>',
-            images: [
+            // '<h5 class="headline">About the Project</h5>' +
+                           '<p>Sundown is a short, narrative experience developed by a team of six university students under the name Teeny Tiny Bison. The game is currently in its second month of development and is scheduled to be available for download this summer of 2018.</p>' +
+                           '<p>Sundown’s core feature is its unique and natural-sounding branching dialogue produced by using ad lib and interview techniques. These improvised sessions with actors, run and organised by myself, our animator, and writer, were then transcribed into a final script for dialogue recording. As the sole Audio Designer, I took care of dialogue production, editing and implementation, sound and ambience design and implementation, and music implementation. I also assisted in concept creation and, together with our writer, pitched the game to industry professionals and a public of around 150 individuals.</p>',
+            images:        [
               {
                 src: require('../assets/SundownPhoto3.jpg'),
               },
@@ -118,6 +118,36 @@ const module = {
         },
         mainImg:    require('../assets/sundown_logo_trimmed2.png'),
         previewImg: require('../assets/SundownThumbnail.png'),
+      },
+      3: {
+        title:      'The Truesdale Show',
+        menuTitle:  'The Truesdale Show',
+        subTitle:   'Podcast | Sound Editor',
+        content:    [
+          {
+            align:         'right',
+            headline:      '<h5 class="headline">The Truesdale Show</h5>',
+            headlineClass: 'text-xs-center',
+            description:
+                           '<h5 class="headline">Audio Designer</h5>' +
+                           '<b>Jan 2018 – June 2018</b>' +
+                           '<ul class="pl-3">' +
+                           '<li>Audio cleaning</li>' +
+                           '<li>Editing, cutting and mixing dialogue</li>' +
+                           '<li>Editing, cutting and mixing foley</li>' +
+                           '</ul>',
+            // video:         'https://player.vimeo.com/video/259221160',
+            secondText:    '<a href="https://itunes.apple.com/us/podcast/truesdale/id1360868294?mt=2&app=podcast" target="_blank" style="text-align:left!important;">' +
+                           '<img src="' + require('../assets/truesdalecover.jpg') + '" style="width: 200px; float: left; padding-right: 10px; ">' +
+                           '<div style="text-align: left!important;padding-top:6px;"><a href="https://itunes.apple.com/us/podcast/truesdale/id1360868294?mt=2&app=podcast" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:110px;height:40px;background-size:contain;" target="_blank"></a></div>' +
+                           '<h5 class="headline text-xs-left" style="">The Truesdale Show</h5>' +
+                           '<p class="text-xs-left" style="font-weight: 300;">Truesdale is a marine biology comedy podcast featuring LGBTQ+, Mental Health and Environmental themes, and is inspired by the adventures of Sherlock Holmes. Dr Mike Truesdale and his intern Scott Hopkins sail around the Philippines, running from the past and solving mundane mysteries.</p>' +
+                           '</a>',
+            // img:      require('../assets/dod_banner_fb_smaller.jpg'),
+          },
+        ],
+        mainImg:    require('../assets/truesdalebanner.jpg'),
+        previewImg: require('../assets/truesdaleshow.jpg'),
       },
       // 3: {
       //   title:      'Sensory Overload',

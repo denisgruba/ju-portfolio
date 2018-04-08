@@ -29,7 +29,7 @@
         <span
             style="font-size: 16px"
             class="grey--text text--darken-2"
-        >Dialogue and Sound Designer</span>
+        >Audio Designer</span>
       </v-toolbar-title>
     </router-link>
 

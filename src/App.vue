@@ -11,7 +11,7 @@
             name="fade-quick"
             mode="out-in"
         >
-          <router-view/>
+          <router-view :key="key"/>
         </transition>
       </v-content>
       <my-footer></my-footer>
@@ -38,7 +38,10 @@
     computed:   {
       ...mapGetters({
         getPageColors: 'getPageColors',
-      })
+      }),
+      key() {
+        return this.$route.fullPath;
+      },
     },
     created() {
       //  [App.vue specific] When App.vue is first loaded start the progress bar
