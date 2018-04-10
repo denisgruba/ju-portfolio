@@ -137,12 +137,17 @@ const module = {
                            '<li>Editing, cutting and mixing foley</li>' +
                            '</ul>',
             // video:         'https://player.vimeo.com/video/259221160',
-            secondText:    '<a href="https://itunes.apple.com/us/podcast/truesdale/id1360868294?mt=2&app=podcast" target="_blank" style="text-align:left!important;">' +
-                           '<img src="' + require('../assets/truesdalecover.jpg') + '" style="width: 200px; float: left; padding-right: 10px; ">' +
-                           '<div style="text-align: left!important;padding-top:6px;"><a href="https://itunes.apple.com/us/podcast/truesdale/id1360868294?mt=2&app=podcast" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:110px;height:40px;background-size:contain;" target="_blank"></a></div>' +
+            secondText:
+            // '<a href="https://itunes.apple.com/us/podcast/truesdale/id1360868294?mt=2&app=podcast" target="_blank" style="text-align:left!important;">' +
+                           // '<img src="' + require('../assets/truesdalecover.jpg') + '" style="width: 200px; float: left; padding-right: 10px; ">' +
+                           // '<div style="text-align: left!important;padding-top:6px;"><a href="https://itunes.apple.com/us/podcast/truesdale/id1360868294?mt=2&app=podcast" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:110px;height:40px;background-size:contain;" target="_blank"></a></div>' +
                            '<h5 class="headline text-xs-left" style="">The Truesdale Show</h5>' +
                            '<p class="text-xs-left" style="font-weight: 300;">Truesdale is a marine biology comedy podcast featuring LGBTQ+, Mental Health and Environmental themes, and is inspired by the adventures of Sherlock Holmes. Dr Mike Truesdale and his intern Scott Hopkins sail around the Philippines, running from the past and solving mundane mysteries.</p>' +
-                           '</a>',
+                           '<a href="https://itunes.apple.com/us/podcast/truesdale/id1360868294?mt=2&amp;app=podcast" class="btn btn--block btn--outline btn--depressed primary--text" style="" target="_blank"><div class="btn__content">\n' +
+                           '  Listen on Apple Podcasts\n' +
+                           '  <i aria-hidden="true" class="icon icon--right material-icons">volume_up</i></div></a>' +
+                           ''
+                           // '</a>',
             // img:      require('../assets/dod_banner_fb_smaller.jpg'),
           },
         ],

@@ -1,5 +1,6 @@
 <template>
   <v-container
+      app
       fluid
       class="pa-0 mt-5"
       align-content-end
@@ -14,40 +15,40 @@
     >
       <v-flex
           xs12
-          class="zindex6 px-4 pb-3"
+          class="zindex6 px-4 pb-3 text-xs-right"
+          style="float: right;"
           :class="largeSize ? 'contact-footer-contained' : ''"
       >
-        <div
-            style="width: 50%; float: left;"
-            class="text-xs-left"
-        >
-          <v-btn
-              icon
-              class="btn-social btn-social-footer clear-border-radius"
-              @click="openInNewWindow('https://uk.linkedin.com/in/jurantowka')"
-              style="height: 100%; width: 100%;"
-              active-class="selected-menu-item"
-              :ripple="false"
-          >
-            <linked-in-icon></linked-in-icon>
-          </v-btn>
-          <v-btn
-              icon
-              class="btn-social btn-social-footer clear-border-radius"
-              @click="openInNewWindow('https://twitter.com/the_audio_kid')"
-              style="height: 100%; width: 100%;"
-              active-class="selected-menu-item"
-              :ripple="false"
-          >
-            <twitter-icon></twitter-icon>
-          </v-btn>
-        </div>
-        <div
-            style="width: 50%; float: right;"
-            class="text-xs-right"
-        >
+        <!--<div-->
+            <!--style="width: 50%; float: left;"-->
+            <!--class="text-xs-left"-->
+        <!--&gt;-->
+          <!--<v-btn-->
+              <!--icon-->
+              <!--class="btn-social btn-social-footer clear-border-radius"-->
+              <!--@click="openInNewWindow('https://uk.linkedin.com/in/jurantowka')"-->
+              <!--style="height: 100%; width: 100%;"-->
+              <!--active-class="selected-menu-item"-->
+              <!--:ripple="false"-->
+          <!--&gt;-->
+            <!--<linked-in-icon></linked-in-icon>-->
+          <!--</v-btn>-->
+          <!--<v-btn-->
+              <!--icon-->
+              <!--class="btn-social btn-social-footer clear-border-radius"-->
+              <!--@click="openInNewWindow('https://twitter.com/the_audio_kid')"-->
+              <!--style="height: 100%; width: 100%;"-->
+              <!--active-class="selected-menu-item"-->
+              <!--:ripple="false"-->
+          <!--&gt;-->
+            <!--<twitter-icon></twitter-icon>-->
+          <!--</v-btn>-->
+        <!--</div>-->
+        <!--<divs-->
+            <!--class="text-xs-right"-->
+        <!--&gt;-->
           <a href="mailto:urantowka.jacob@gmail.com">urantowka.jacob@gmail.com</a>
-        </div>
+        <!--</divs>-->
 
       </v-flex>
     </v-layout>

@@ -14,7 +14,9 @@
           <router-view :key="key"/>
         </transition>
       </v-content>
-      <my-footer></my-footer>
+      <v-content>
+        <my-footer></my-footer>
+      </v-content>
       <vue-progress-bar></vue-progress-bar>
       <!--<soundwaves5></soundwaves5>-->
     </v-app>

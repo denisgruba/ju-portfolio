@@ -172,7 +172,7 @@ img.responsive-img {
 }
 
 .fixed-height-spacer {
-  height: 50px;
+  height: 10px;
 }
 
 .overlay {
@@ -262,4 +262,14 @@ img.responsive-img {
   &:hover {
     color: #000000;
   }
+}
+
+.btn-justify-left {
+  .btn__content {
+    justify-content: left;
+  }
+}
+
+.default-cursor {
+  cursor: default;
 }
