@@ -1,11 +1,9 @@
 <template>
-  <v-container
+  <v-footer
       app
-      fluid
-      class="pa-0 mt-5"
-      align-content-end
-      align-end
-      style="max-height: 250px;"
+      class="pa-0 mt-5 white"
+      inset
+      style="z-index: 5"
   >
     <v-layout
         row
@@ -17,43 +15,46 @@
           xs12
           class="zindex6 px-4 pb-3 text-xs-right"
           style="float: right;"
-          :class="largeSize ? 'contact-footer-contained' : ''"
       >
         <!--<div-->
-            <!--style="width: 50%; float: left;"-->
-            <!--class="text-xs-left"-->
+        <!--style="width: 50%; float: left;"-->
+        <!--class="text-xs-left"-->
         <!--&gt;-->
-          <!--<v-btn-->
-              <!--icon-->
-              <!--class="btn-social btn-social-footer clear-border-radius"-->
-              <!--@click="openInNewWindow('https://uk.linkedin.com/in/jurantowka')"-->
-              <!--style="height: 100%; width: 100%;"-->
-              <!--active-class="selected-menu-item"-->
-              <!--:ripple="false"-->
-          <!--&gt;-->
-            <!--<linked-in-icon></linked-in-icon>-->
-          <!--</v-btn>-->
-          <!--<v-btn-->
-              <!--icon-->
-              <!--class="btn-social btn-social-footer clear-border-radius"-->
-              <!--@click="openInNewWindow('https://twitter.com/the_audio_kid')"-->
-              <!--style="height: 100%; width: 100%;"-->
-              <!--active-class="selected-menu-item"-->
-              <!--:ripple="false"-->
-          <!--&gt;-->
-            <!--<twitter-icon></twitter-icon>-->
-          <!--</v-btn>-->
+        <!--<v-btn-->
+        <!--icon-->
+        <!--class="btn-social btn-social-footer clear-border-radius"-->
+        <!--@click="openInNewWindow('https://uk.linkedin.com/in/jurantowka')"-->
+        <!--style="height: 100%; width: 100%;"-->
+        <!--active-class="selected-menu-item"-->
+        <!--:ripple="false"-->
+        <!--&gt;-->
+        <!--<linked-in-icon></linked-in-icon>-->
+        <!--</v-btn>-->
+        <!--<v-btn-->
+        <!--icon-->
+        <!--class="btn-social btn-social-footer clear-border-radius"-->
+        <!--@click="openInNewWindow('https://twitter.com/the_audio_kid')"-->
+        <!--style="height: 100%; width: 100%;"-->
+        <!--active-class="selected-menu-item"-->
+        <!--:ripple="false"-->
+        <!--&gt;-->
+        <!--<twitter-icon></twitter-icon>-->
+        <!--</v-btn>-->
         <!--</div>-->
         <!--<divs-->
-            <!--class="text-xs-right"-->
+        <!--class="text-xs-right"-->
         <!--&gt;-->
+        <div class="mx-auto"
+             style="width: 100%"
+             :class="[largeSize ? 'contact-footer-contained' : '', !smallSize ? 'side-nav-padding': '']">
           <a href="mailto:urantowka.jacob@gmail.com">urantowka.jacob@gmail.com</a>
+        </div>
         <!--</divs>-->
 
       </v-flex>
     </v-layout>
     <!--<soundwaves4 class="zindex5"></soundwaves4>-->
-  </v-container>
+  </v-footer>
 </template>
 
 <script>
@@ -68,6 +69,9 @@
       Soundwaves4, InstagramIcon, LinkedInIcon, TwitterIcon
     },
     computed:   {
+      smallSize() {
+        return this.$vuetify.breakpoint.xsOnly || this.$vuetify.breakpoint.smOnly;
+      },
       largeSize() {
         return this.$vuetify.breakpoint.mdOnly || this.$vuetify.breakpoint.lgOnly || this.$vuetify.breakpoint.xlOnly;
       },
@@ -98,8 +102,12 @@
   }
 
   .contact-footer-contained {
-    max-width: 1000px !important;
+    max-width: 1250px !important;
     margin: 0 auto;
+  }
+
+  .side-nav-padding {
+    padding-left: 300px;
   }
 
   a, .phone {

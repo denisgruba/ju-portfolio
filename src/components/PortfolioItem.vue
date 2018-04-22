@@ -3,20 +3,20 @@
       :fluid="!largeSize"
       grid-list-xl
   >
-    <v-layout
-        row
-        wrap
-    >
-      <v-flex
-          xs12
-          class="text-xs-center"
-          style="overflow: hidden; max-height: 450px;"
-      >
-        <img
-            :src="item.mainImg"
-            class="responsive-img "
-        >
-      </v-flex>
+    <!--<v-layout-->
+        <!--row-->
+        <!--wrap-->
+    <!--&gt;-->
+      <!--<v-flex-->
+          <!--xs12-->
+          <!--class="text-xs-center"-->
+          <!--style="overflow: hidden; max-height: 450px;"-->
+      <!--&gt;-->
+        <!--<img-->
+            <!--:src="item.mainImg"-->
+            <!--class="responsive-img "-->
+        <!--&gt;-->
+      <!--</v-flex>-->
       <!--<v-flex xs12>-->
       <!--<h5 class="headline" v-html="item.pageTitle">-->
 
@@ -30,7 +30,7 @@
       <!--<v-flex xs12 md6 lg6>-->
       <!--<div v-html="item.description"></div>-->
       <!--</v-flex>-->
-    </v-layout>
+    <!--</v-layout>-->
     <v-layout
         row
         wrap

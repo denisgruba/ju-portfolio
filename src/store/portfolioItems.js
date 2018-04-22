@@ -32,8 +32,7 @@ const module = {
             description:
             // '<h5 class="headline text-xs-center">My work</h5>' +
             //         '<h5 class="headline">About the Project</h5>' +
-                           '<p><a href="http://www.salixgames.com/" target="_blank">Salix</a> are a Guildford based indie company made form combined powers of ex-AAA developers from places such as Rocksteady, Lionhead, and Creative Assembly. Du Lac & Fey: Dance of Death is the studio’s debut title. It tells the story of Arthurian immortals Sir Lancelot Du Lac and Morgana Le Fey as they endeavour to bring the infamous murders of Jack the Ripper to an end and save the city of London. The game is set for release on PC this year.</p>' +
-                           '<p>I first got involved with Salix at the start of my final year at university when I got asked to assist with polishing the localisation for the game. My eagerness and determination has let me level up to the current part-time position with Salix as an Assistant Sound Designer, where my work revolves around assisting in dialogue production, management, and implementation alongside audio professionals such as Ian Macbeth and the director and the founder of the brand Jessica Saunders.</p>',
+                           '<p><a href="http://www.salixgames.com/" target="_blank">Salix</a> are a Guildford based indie company made from combined powers of ex triple-A developers from places such as Rocksteady, Lionhead and Creative Assembly. Du Lac & Fey: Dance of Death is the studio’s debut title. It tells the story of Arthurian immortals Sir Lancelot Du Lac and Morgana Le Fey as they endeavour to bring the infamous murders of Jack the Ripper to an end and save the city of London. The game features voice performances from the talents of Dragon Age, Black Mirror and Game of Thrones and is set for release on PC this year.</p>',
             images:        [
               {
                 src: require('../assets/SalixPicture1.jpg')
@@ -75,12 +74,12 @@ const module = {
                            '<h5 class="headline">Audio Designer</h5>' +
                            '<b>Jan 2018 – June 2018</b>' +
                            '<ul class="pl-3">' +
-                           '<li>Organising, co-running, and recording VO auditions</li>' +
-                           '<li>Recording, editing, and managing dialogue production</li>' +
+                           '<li>Organising, co-running and recording dialogue sessions</li>' +
+                           '<li>Dialogue management and editing</li>' +
                            '<li>Implementation of dialogue with Fungus</li>' +
                            '<li>Implementation of sounds with Wwise</li>' +
                            '<li>Created an adaptive ambient soundscape with Wwise</li>' +
-                           '<li>Sound design and foley and field recording</li>' +
+                           '<li>Sound design and Foley and field recording</li>' +
                            '</ul>',
             video:         'https://player.vimeo.com/video/259221160',
             // img:      require('../assets/dod_banner_fb_smaller.jpg'),
@@ -91,8 +90,7 @@ const module = {
             headlineClass: 'py-0',
             description:
             // '<h5 class="headline">About the Project</h5>' +
-                           '<p>Sundown is a short, narrative experience developed by a team of six university students under the name Teeny Tiny Bison. The game is currently in its second month of development and is scheduled to be available for download this summer of 2018.</p>' +
-                           '<p>Sundown’s core feature is its unique and natural-sounding branching dialogue produced by using ad lib and interview techniques. These improvised sessions with actors, run and organised by myself, our animator, and writer, were then transcribed into a final script for dialogue recording. As the sole Audio Designer, I took care of dialogue production, editing and implementation, sound and ambience design and implementation, and music implementation. I also assisted in concept creation and, together with our writer, pitched the game to industry professionals and a public of around 150 individuals.</p>',
+                           '<p>Sundown is a short, narrative experience involving a conductor and a World War 2 soldier on a journey to the afterlife. As the player, you get to experience a visceral and intimate story of two gay soldiers, whose story is based on real life events and find out about the more personal, often ignored, aspects of war. The game, developed by a small team of six, is in its final months of development and is scheduled to be available for download this summer of 2018.</p>',
             images:        [
               {
                 src: require('../assets/SundownPhoto3.jpg'),
@@ -132,9 +130,10 @@ const module = {
                            '<h5 class="headline">Audio Designer</h5>' +
                            '<b>Jan 2018 – June 2018</b>' +
                            '<ul class="pl-3">' +
-                           '<li>Audio cleaning</li>' +
-                           '<li>Editing, cutting and mixing dialogue</li>' +
-                           '<li>Editing, cutting and mixing foley</li>' +
+                           '<li>Dialogue editing</li>' +
+                           '<li>Dialogue cutting and mixing</li>' +
+                           '<li>Foley and field recording</li>' +
+                           '<li>Foley cutting, editing and mixing</li>' +
                            '</ul>',
             // video:         'https://player.vimeo.com/video/259221160',
             secondText:
@@ -142,7 +141,7 @@ const module = {
                            // '<img src="' + require('../assets/truesdalecover.jpg') + '" style="width: 200px; float: left; padding-right: 10px; ">' +
                            // '<div style="text-align: left!important;padding-top:6px;"><a href="https://itunes.apple.com/us/podcast/truesdale/id1360868294?mt=2&app=podcast" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/podcast-lrg.svg) no-repeat;width:110px;height:40px;background-size:contain;" target="_blank"></a></div>' +
                            '<h5 class="headline text-xs-left" style="">The Truesdale Show</h5>' +
-                           '<p class="text-xs-left" style="font-weight: 300;">Truesdale is a marine biology comedy podcast featuring LGBTQ+, Mental Health and Environmental themes, and is inspired by the adventures of Sherlock Holmes. Dr Mike Truesdale and his intern Scott Hopkins sail around the Philippines, running from the past and solving mundane mysteries.</p>' +
+                           '<p class="text-xs-left" style="font-weight: 300;">The Truesdale Show is a marine biology comedy podcast featuring LGBTQ+, Mental Health and Environmental themes, and is inspired by the adventures of Sherlock Holmes. Dr Mike Truesdale and his intern Scott Hopkins sail around the Philippines, running from the past and solving mundane mysteries.</p>' +
                            '<a href="https://itunes.apple.com/us/podcast/truesdale/id1360868294?mt=2&amp;app=podcast" class="btn btn--block btn--outline btn--depressed primary--text" style="" target="_blank"><div class="btn__content">\n' +
                            '  Listen on Apple Podcasts\n' +
                            '  <i aria-hidden="true" class="icon icon--right material-icons">volume_up</i></div></a>' +
