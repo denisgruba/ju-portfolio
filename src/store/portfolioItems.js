@@ -8,7 +8,7 @@ const module = {
         content:    [
           {
             align:         'right',
-            headline:      '<h5 class="headline">Du Lac & Fey: Dance of Death <span style="font-weight: 300">by</span> Salix Games Ltd</h5>',
+            headline:      '<h5 class="display-1 headline-underline">Du Lac & Fey: Dance of Death <span style="font-weight: 300">by</span> Salix Games Ltd</h5>',
             headlineClass: 'text-xs-center',
             description:
                            '<h5 class="headline">Assistant Sound Designer</h5>' +
@@ -68,7 +68,7 @@ const module = {
         content:    [
           {
             align:         'right',
-            headline:      '<h5 class="headline">Sundown <span style="font-weight: 300">by</span> Teeny Tiny Bison</h5>',
+            headline:      '<h5 class="display-1 headline-underline">Sundown <span style="font-weight: 300">by</span> Teeny Tiny Bison</h5>',
             headlineClass: 'text-xs-center',
             description:
                            '<h5 class="headline">Audio Designer</h5>' +
@@ -81,7 +81,7 @@ const module = {
                            '<li>Created an adaptive ambient soundscape with Wwise</li>' +
                            '<li>Sound design and Foley and field recording</li>' +
                            '</ul>',
-            video:         'https://player.vimeo.com/video/259221160',
+            video:         'https://player.vimeo.com/video/269461549',
             // img:      require('../assets/dod_banner_fb_smaller.jpg'),
           },
           {
@@ -124,7 +124,7 @@ const module = {
         content:    [
           {
             align:         'right',
-            headline:      '<h5 class="headline">The Truesdale Show</h5>',
+            headline:      '<h5 class="display-1 headline-underline">The Truesdale Show</h5>',
             headlineClass: 'text-xs-center',
             description:
                            '<h5 class="headline">Audio Designer</h5>' +

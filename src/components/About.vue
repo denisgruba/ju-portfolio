@@ -23,7 +23,7 @@
               wrap
           >
             <v-flex xs12>
-              <h5 class="headline">About me</h5>
+              <h5 class="display-1 headline-underline">About me</h5>
             </v-flex>
             <v-flex
                 xs12

@@ -1,6 +1,6 @@
 <template>
   <v-navigation-drawer
-      class="side-nav pb-0"
+      class="side-nav pb-0 success"
       v-model="sideNavState"
       fixed
       :temporary="smallSize"

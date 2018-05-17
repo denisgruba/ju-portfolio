@@ -4,34 +4,36 @@
       grid-list-xl
   >
     <!--<v-layout-->
-        <!--row-->
-        <!--wrap-->
+    <!--row-->
+    <!--wrap-->
     <!--&gt;-->
-      <!--<v-flex-->
-          <!--xs12-->
-          <!--class="text-xs-center"-->
-          <!--style="overflow: hidden; max-height: 450px;"-->
-      <!--&gt;-->
-        <!--<img-->
-            <!--:src="item.mainImg"-->
-            <!--class="responsive-img "-->
-        <!--&gt;-->
-      <!--</v-flex>-->
-      <!--<v-flex xs12>-->
-      <!--<h5 class="headline" v-html="item.pageTitle">-->
+    <!--<v-flex-->
+    <!--xs12-->
+    <!--class="text-xs-center"-->
+    <!--style="overflow: hidden; max-height: 450px;"-->
+    <!--&gt;-->
+    <!--<img-->
+    <!--:src="item.mainImg"-->
+    <!--class="responsive-img "-->
+    <!--&gt;-->
+    <!--</v-flex>-->
+    <!--<v-flex xs12>-->
+    <!--<h5 class="headline" v-html="item.pageTitle">-->
 
-      <!--</h5>-->
-      <!--</v-flex>-->
-      <!--<v-flex xs12 md6 lg6>-->
-      <!--<div class='embed-container'>-->
-      <!--<iframe :src="item.vimeo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-      <!--</div>-->
-      <!--</v-flex>-->
-      <!--<v-flex xs12 md6 lg6>-->
-      <!--<div v-html="item.description"></div>-->
-      <!--</v-flex>-->
+    <!--</h5>-->
+    <!--</v-flex>-->
+    <!--<v-flex xs12 md6 lg6>-->
+    <!--<div class='embed-container'>-->
+    <!--<iframe :src="item.vimeo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+    <!--</div>-->
+    <!--</v-flex>-->
+    <!--<v-flex xs12 md6 lg6>-->
+    <!--<div v-html="item.description"></div>-->
+    <!--</v-flex>-->
     <!--</v-layout>-->
     <v-layout
+        transition="fade-quick"
+        stagger="250"
         row
         wrap
         class="mb-3"

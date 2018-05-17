@@ -9,9 +9,31 @@
   font-size: 16px;
 }
 
+.helloEmoji:before {
+  content: "";
+  background: url('./assets/hi_emoji2.png') no-repeat center center;
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  margin-left: -50px;
+  margin-top: -10px;
+}
+
+.helloEmoji {
+  margin-left: 50px;
+}
+
 .headline {
   letter-spacing: 2px !important;
-  font-weight: 500 !important;
+  font-weight: 500;
+  color: #cb7b2c;
+}
+
+.headline-underline {
+  border-bottom: #cb7b2c solid 2px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .name-title {
@@ -108,6 +130,19 @@ p {
 }
 
 a .btn__content span, .btn-social .btn__content span {
+  &:before {
+    content: "";
+    background: url('./assets/mark.png') no-repeat center center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 0;
+    opacity: 0;
+    transition: all .2s;
+  }
+  position: relative;
   transition: border-bottom-color .3s;
   border-bottom: transparent 2px solid;
 }
@@ -118,7 +153,7 @@ a:hover, .btn-social:hover {
     background: transparent;
     span {
       transition: .3s border-bottom-color;
-      border-bottom: grey 2px solid;
+      border-bottom: #d89b56 2px solid;
     }
   }
 }
@@ -129,9 +164,22 @@ a:hover, .btn-social:hover {
 
 .selected-menu-item {
   span {
+    &:before {
+      content: "";
+      background: url('./assets/mark.png') no-repeat center center;
+      background-size: contain;
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      margin-left: -30px!important;
+      margin-top: 0;
+      opacity: 1!important;
+      transition: all .2s;
+    }
+    position: relative;
     //padding-bottom: 5px;
     transition: border-bottom-color .3s;
-    border-bottom: black 2px solid !important;
+    border-bottom: #cb7b2c 2px solid !important;
   }
 }
 
@@ -257,7 +305,7 @@ img.responsive-img {
 .project-links {
   color: #616161;
   .list__tile--active {
-    color: #000000!important;
+    color: #000000 !important;
   }
   &:hover {
     color: #000000;

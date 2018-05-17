@@ -36,7 +36,9 @@ Vue.use(Vuetify, {
     primary:   colors.lightBlue.base,
     accent:    colors.indigo.base,
     secondary: '#FFFFFF',
-    error:     '#ff0041'
+    error:     '#ff0041',
+    warning:   '#cb7b2c',
+    success:   '#f8ebdc'
   },
 });
 
@@ -48,7 +50,7 @@ export const app = new Vue({
   computed:   {
     ...mapGetters({
       getListOfPortfolioItems: 'getListOfPortfolioItems',
-      homeColors: 'getHomeColors'
+      homeColors:              'getHomeColors'
     })
   },
   components: {App},
