@@ -5,7 +5,7 @@
   letter-spacing: 1.5px;
 }
 
-.btn {
+.v-btn {
   font-size: 16px;
 }
 
@@ -60,7 +60,7 @@ p {
   text-align: justify;
 }
 
-.btn.btn-social {
+.v-btn.btn-social {
   max-width: 30px;
 }
 
@@ -70,66 +70,66 @@ p {
   }
 }
 
-.btn.btn-social .btn__content {
+.v-btn.btn-social .btn__content {
   padding: 0;
 }
 
-.application.theme--light {
+.v-application.theme--light {
   //  background: #fffcf2;
   transition: all 1s;
 }
 
 .toolbar-contained {
-  .toolbar__content {
+  .v-toolbar__content {
     max-width: 1000px;
     margin: 0 auto;
   }
 }
 
-.card .card__media.zoom .card__media__background {
+.v-card .v-card__media.zoom .v-card__media__background {
   will-change: transform;
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card:hover .card__media.zoom .card__media__background {
+.v-card:hover .v-card__media.zoom .v-card__media__background {
   transform: scale(1.05);
   will-change: transform;
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card .card__media.blur .card__media__background {
+.v-card .v-card__media.blur .v-card__media__background {
   will-change: transform, filter;
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card:hover .card__media.blur .card__media__background {
+.v-card:hover .v-card__media.blur .v-card__media__background {
   filter: blur(5px) brightness(60%);
   will-change: filter;
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card.highlight {
+.v-card.highlight {
   color: rgba(0, 0, 0, .87) !important;
-  .card__media .card__media__background {
+  .v-card__media .v-card__media__background {
     will-change: filter, color;
     transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
   }
 }
 
-.card.highlight:hover {
+.v-card.highlight:hover {
   color: rgba(50, 50, 50, .87) !important;
-  .card__media .card__media__background {
+  .v-card__media .v-card__media__background {
     filter: brightness(120%);
     will-change: filter, color;
     transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
   }
 }
 
-.btn--active .btn__content::before, .btn:focus .btn__content::before, .btn:hover .btn__content::before {
+.v-btn--active .v-btn__content::before, .v-btn:focus .v-btn__content::before, .v-btn:hover .v-btn__content::before {
   background-color: transparent;
 }
 
-a .btn__content span, .btn-social .btn__content span {
+a .v-btn__content span, .btn-social .v-btn__content span {
   &:before {
     content: "";
     background: url('./assets/mark.png') no-repeat center center;
@@ -147,9 +147,13 @@ a .btn__content span, .btn-social .btn__content span {
   border-bottom: transparent 2px solid;
 }
 
+.v-btn:before {
+  opacity: 0;
+}
+
 a:hover, .btn-social:hover {
   background: transparent;
-  .btn__content {
+  .v-btn__content {
     background: transparent;
     span {
       transition: .3s border-bottom-color;
@@ -195,7 +199,7 @@ img.responsive-img {
   }
 }
 
-.container {
+.v-container {
   max-width: 1000px;
 }
 
@@ -223,7 +227,7 @@ img.responsive-img {
   height: 10px;
 }
 
-.overlay {
+.v-overlay {
   z-index: 19;
 }
 
@@ -241,31 +245,31 @@ img.responsive-img {
 
 .fade-quick-enter, .fade-quick-leave-to {
   opacity: 0;
-  height: 0%;
+  height: 0;
 }
 
 .clear-border-radius {
   border-radius: 0 !important;
-  .btn__content::before {
+  .v-btn__content::before {
     border-radius: 0 !important;
   }
-  .btn__content {
+  .v-btn__content {
     border-radius: 0 !important;
   }
 }
 
-.toolbar-menu {
+.v-toolbar-menu {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12) !important;
   border-radius: 0;
-  .list {
+  .v-list {
     padding-bottom: 0;
-    .list__tile.list__tile--link {
+    .v-list__tile.v-list__tile--link {
       height: 30px;
       &:hover {
         background-color: transparent;
 
       }
-      .list__tile__title {
+      .v-list__tile__title {
         height: 24px;
         line-height: 24px;
 
@@ -288,11 +292,11 @@ img.responsive-img {
   }
 }
 
-.list__group::after, .list__group::before {
+.v-list__group::after, .v-list__group::before {
   height: 0px;
 }
 
-.toolbar__items .btn, .toolbar__items .menu, .toolbar__items .menu__activator {
+.v-toolbar__items .v-btn, .v-toolbar__items .v-menu, .v-toolbar__items .v-menu__activator {
   margin-top: 1px;
 }
 
@@ -304,7 +308,7 @@ img.responsive-img {
 
 .project-links {
   color: #616161;
-  .list__tile--active {
+  .v-list__tile--active {
     color: #000000 !important;
   }
   &:hover {
@@ -313,7 +317,7 @@ img.responsive-img {
 }
 
 .btn-justify-left {
-  .btn__content {
+  .v-btn__content {
     justify-content: left;
   }
 }
