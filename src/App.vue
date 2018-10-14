@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <v-app class="secondary">
-      <side-nav></side-nav>
-      <toolbar></toolbar>
+    <v-app>
+      <!--<side-nav></side-nav>-->
+      <!--<toolbar></toolbar>-->
       <v-content
-          style="z-index: 4"
+          style="z-index: 4;"
           fill-height
       >
         <transition

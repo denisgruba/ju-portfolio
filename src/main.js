@@ -10,8 +10,11 @@ import VueProgressBar from 'vue-progressbar';
 import 'vuetify/dist/vuetify.min.css';
 import colors from 'vuetify/es5/util/colors';
 import './style.scss';
-import {mapGetters} from 'vuex';
+import { mapGetters } from 'vuex';
+import 'fullpage.js/vendors/scrollOverflow.min.js';
+import VueFullPage from 'vue-fullpage.js';
 
+Vue.use(VueFullPage);
 
 Vue.use(VueMatchHeights, {});
 
@@ -38,21 +41,22 @@ Vue.use(Vuetify, {
     secondary: '#FFFFFF',
     error:     '#ff0041',
     warning:   '#cb7b2c',
-    success:   '#f8ebdc'
+    success:   '#f8ebdc',
+    info:      '#e5f8dc',
   },
 });
 
 /* eslint-disable no-new */
 export const app = new Vue({
-  el:         '#app',
-  router,
-  store,
-  computed:   {
-    ...mapGetters({
-      getListOfPortfolioItems: 'getListOfPortfolioItems',
-      homeColors:              'getHomeColors'
-    })
-  },
-  components: {App},
-  template:   '<App/>'
-});
+                             el:         '#app',
+                             router,
+                             store,
+                             computed:   {
+                               ...mapGetters({
+                                               getListOfPortfolioItems: 'getListOfPortfolioItems',
+                                               homeColors:              'getHomeColors',
+                                             }),
+                             },
+                             components: { App },
+                             template:   '<App/>',
+                           });
