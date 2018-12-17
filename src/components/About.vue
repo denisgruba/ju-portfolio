@@ -20,11 +20,13 @@
           <v-flex
             xs12
             md6
+            style="text-align: center"
           >
             <img
               :src="aboutImage"
               alt=""
               class="responsive-img"
+              style="max-height: 500px;"
             >
           </v-flex>
           <v-flex

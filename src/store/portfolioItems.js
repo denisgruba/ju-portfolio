@@ -8,17 +8,17 @@ const module = {
         content:    [
           {
             align:         'right',
-            headline:      '<h5 class="display-1 headline-underline">Du Lac & Fey </h5><h5 class="headline" style="color: black; font-size: 20px!important; font-weight: 300">Sound Designer</h5>',
+            headline:      '<h5 class="display-1 headline-underline">Du Lac & Fey </h5><h5 class="headline" style="color: black; font-size: 20px!important; font-weight: 300">Junior Audio Designer</h5>',
             headlineClass: 'text-xs-center',
             description:
                            '' +
                            '<b>January 2018 – Present</b>' +
                            '<ul class="pl-3">' +
-                           '<li>Ownership of narrative implementation via Ink and dialogue implementation via Wwise.</li>' +
-                           '<li>Creating and managing audio and gameplay documentation.</li>' +
-                           '<li>Investigating and fixing audio bugs.</li>' +
-                           '<li>Implementing gameflow and interactions into the game.</li>' +
-                           '<li>Desiging and implementing sound via Wwise.</li>' +
+                           '<li>Implementing VO, sound, music and the narrative into the game.</li>' +
+                           '<li>Creating and keeping audio and gameplay documentation up-to-date.</li>' +
+                           '<li>Designing, editing and mixing sound effects and VO.</li>' +
+                           '<li>Implementing gameplay and gameflow interactions.</li>' +
+                           '<li>Investigating and fixing audio bugs and working to improve the audio pipeline.</li>' +
                            '<li>Assisted in VO recording at Pinewood Studios, Shepperon, and co-ran the exhibit at EGX Rezzed.</li>' +
                            '</ul>',
             video:         'https://www.youtube.com/embed/FXyTjUJs4YU',
@@ -71,14 +71,13 @@ const module = {
             headlineClass: 'text-xs-center',
             description:
                            '' +
-                           '<b>January 2018 – April 2018</b>' +
+                           '<b>January 2018 – July 2018</b>' +
                            '<ul class="pl-3">' +
-                           '<li>Organising, recording, and co-running dialogue auditions and sessions with the team\'s writer.</li>' +
-                           '<li>Documenting and managing dialogue.</li>' +
-                           '<li>Editing dialogue via Audition, Soundforge and Pro Tools.</li>' +
-                           '<li>Implementing dialogue into Unity via Fungus.</li>' +
-                           '<li>Designing and recording sound and Foley.</li>' +
-                           '<li>Implementing sound into Unity via Wwise.</li>' +
+                           '<li>Organising, recording, and co-running VO auditions and sessions with the team\'s writer.</li>' +
+                           '<li>Designing, editing and mixing sound effects and VO.</li>' +
+                           '<li>Implementing VO via Fungus.</li>' +
+                           '<li>Implementing sound and music via Wwise.</li>' +
+                           '<li>Creating and managing VO and audio documentation.</li>' +
                            '</ul>',
             video:         'https://player.vimeo.com/video/269461549',
             // img:      require('../assets/dod_banner_fb_smaller.jpg'),

@@ -1,6 +1,6 @@
 const module = {
   state:   {
-    helloMessage: '<div>\n  <p class="text-xs-center" style="font-size: 20px;">Technical Audio and Sound Designer</p>\n  ' +
+    helloMessage: '<div>\n  <p class="text-xs-center" style="font-size: 20px;">Technical Audio Designer</p>\n  ' +
                   '\n</div>',
     // video:        'https://player.vimeo.com/video/270362205',
     pageColors:   {
